@@ -1,0 +1,231 @@
+// Customize this as such:
+// [NAME] [BYTE] [PARAMETERS]
+
+nop 0
+nop1 1
+end 2
+return 3
+call 4 POINTER
+goto 5 POINTER
+if1 6 BYTE POINTER
+if2 7 BYTE POINTER
+gotostd 8 BYTE
+callstd 9 BYTE
+gotostdif 10 BYTE BYTE
+callstdif 11 BYTE BYTE
+jumpram 12
+killscript 13
+setbyte 14 BYTE
+loadpointer 15 BYTE POINTER
+setbyte2 16 BYTE BYTE
+writebytetooffset 17 BYTE RAMPOINTER
+loadbytefrompointer 18 BYTE POINTER
+setfarbyte 19 BYTE POINTER
+copyscriptbanks 20 BYTE BYTE
+copybyte 21 POINTER POINTER
+setvar 22 WORD WORD
+addvar 23 WORD WORD
+subvar 24 WORD WORD
+copyvar 25 WORD WORD
+copyvarifnotzero 26 WORD WORD
+comparebanks 27 WORD WORD
+comparebanktobyte 28 BYTE WORD
+comparefarbanktofarbyte 29 BYTE POINTER
+comparefarbanktobyte 30 POINTER BYTE
+comparefarbytetobyte 31 POINTER BYTE
+comparefarbytes 32 POINTER POINTER
+compare 33 WORD WORD
+comparevars 34 WORD WORD
+callasm 35 POINTER
+cmd24 36 PONTER
+special 37 WORD
+special2 38 WORD WORD
+waitstate 39
+pause 40 WORD
+setflag 41 WORD
+clearflag 42 WORD
+checkflag 43 WORD
+cmd2c 44 WORD WORD
+checkdailyflags 45
+resetvars 46
+sound 47 WORD
+checksound 48 WORD
+fanfare 49 WORD
+waitfanfare 50
+playsong 51 WORD BYTE
+playsong2 52 WORD
+fadedefault 53
+fadesong 54 WORD
+fadeout 55 BYTE
+fadein 56 BYTE
+warp 57 BYTE BYTE BYTE WORD WORD
+warpmuted 58 BYTE BYTE BYTE WORD WORD
+warpwalk 59 BYTE BYTE BYTE WORD WORD
+warphole 60 BYTE BYTE
+warpteleport 61 BYTE BYTE BYTE WORD WORD
+warp3 62 BYTE BYTE BYTE WORD WORD
+setwarpplace 63 BYTE BYTE BYTE WORD WORD
+warp4 64 BYTE BYTE BYTE WORD WORD
+warp5 65 BYTE BYTE BYTE WORD WORD
+getplayerpos 66 WORD WORD
+countpokemon 67
+additem 68 WORD WORD
+removeitem 69 WORD WORD
+checkitemroom 70 WORD WORD
+checkitem 71 WORD WORD
+checkitemtype 72 WORD
+addpcitem 73 WORD WORD
+checkpcitem 74 WORD WORD
+adddecoration 75 WORD
+removedecoration 76 WORD
+testdecoration 77 WORD
+checkdecoration 78 WORD
+applymovement 79 WORD POINTER
+applymovementpos 80 WORD POINTER BYTE BYTE
+waitmovement 81 WORD
+waitmovementpos 82 WORD BYTE BYTE
+hidesprite 83 WORD
+hidespritepos 84 WORD BYTE BYTE
+showsprite 85 WORD
+showspritepos 86 WORD BYTE BYTE
+movesprite 87 WORD WORD WORD
+spritevisible 88 WORD BYTE BYTE
+spriteinvisible 89 WORD BYTE BYTE
+faceplayer 90
+spriteface 91 WORD BYTE
+trainerbattle 92 BYTE WORD WORD POINTER POINTER
+repeattrainerbattle 93
+endtrainerbattle 94
+endtrainerbattle2 95
+checktrainerflag 96 WORD
+cleartrainerflag 97 WORD
+settrainerflag 98 WORD
+movesprite2 99 WORD WORD WORD
+moveoffscreen 100
+spritebehave 101 WORD BYTE
+waitmsg 102
+preparemsg 103 POINTER
+closeonkeypress 104
+lockall 105
+lock 106
+releaseall 107
+release 108
+waitkeypress 109
+yesnobox 110 BYTE BYTE
+multichoice 111 BYTE BYTE BYTE BYTE
+mutlichoice2 112 BYTE BYTE BYTE BYTE BYTE
+mutlichoice3 113 BYTE BYTE BYTE BYTE BYTE
+showbox 114 BYTE BYTE BYTE BYTE
+hidebox 115 BYTE BYTE BYTE BYTE
+clearbox 116 BYTE BYTE BYTE BYTE
+showpokepic 117 WORD BYTE BYTE
+hidepokepic 118
+showcontestwinner 119 BYTE
+braille 120 POINTER
+givepokemon 121 WORD BYTE WORD DWORD DWORD BYTE
+giveegg 122 WORD
+setpkmnpp 123 BYTE BYTE WORD
+setpkmnattack 123 BYTE BYTE WORD
+checkattack 124 WORD
+bufferpokemon 125 BYTE WORD
+bufferfirstpokemon 126 BYTE
+bufferpartypokemon 127 BYTE WORD
+bufferitem 128 BYTE WORD
+bufferdecoration 129 BYTE WORD
+bufferattack 130 BYTE WORD
+buffernumber 131 BYTE WORD
+bufferstd 132 BYTE WORD
+bufferstring 133 BYTE WORD
+pokemart 134 POINTER
+pokemart2 135 POINTER
+pokemart3 136 POINTER
+pokecasino 137 WORD
+cmd8a 138 BYTE BYTE BYTE BYTE
+choosecontestpkmn 139
+startcontest 140
+showcontestresults 141
+contestlinktransfer 142
+random 143 WORD
+givemoney 144 DWORD BYTE
+paymoney 145 DWORD BYTE
+checkmoney 146 DWORD BYTE
+showmoney 147 BYTE BYTE BYTE
+hidemoney 148 BYTE BYTE
+updatemoney 149 BYTE BYTE BYTE
+cmd96 150 WORD
+fadescreen 151 BYTE
+fadescreendelay 152 BYTE BYTE
+darken 153 WORD
+lighten 154 BYTE
+preparemsg 155 POINTER
+doanimation 156 WORD
+setanimation 157 BYTE WORD
+checkanimation 158 WORD
+sethealingplace 159 BYTE
+checkgender 160
+cry 161 WORD WORD
+setmaptile 162 WORD WORD WORD WORD
+resetweather 163
+setweather 164 WORD
+doweather 165
+cmda6 166 BYTE
+setmapfooter 167 WORD
+spritelevelup 168 WORD BYTE BYTE BYTE
+restorespritelevelup 169 WORD BYTE BYTE
+createsprite 170 BYTE BYTE WORD WORD BYTE BYTE
+spriteface2 171 BYTE BYTE
+setdooropened 172 WORD WORD
+setdoorclosed 173 WORD WORD
+doorchange 174
+setdooropened2 175 WORD WORD
+setdoorclosed2 176 WORD WORD
+cmdb1 177 BYTE WORD BYTE WORD
+cmdb2 178
+checkcoins 179 DWORD
+givecoins 180 WORD
+removecoins 181 WORD
+setwildbattle 182 WORD BYTE WORD
+dowildbattle 183
+setvirtualaddress 184 DWORD
+virtualgoto 185 POINTER
+virtualcall 186 POINTER
+virtualgotoif 187 BYTE POINTER
+virtualcallif 188 BYTE POINTER
+virtualmsgbox 189 POINTER
+virtualloadpointer 190 POINTER
+virtualbuffer 191 BYTE POINTER
+showcoins 192 BYTE BYTE
+hidecoins 193 BYTE BYTE
+updatecoins 194 BYTE BYTE
+cmdc3 195 BYTE
+warp6 196 BYTE BYTE BYTE WORD WORD
+waitcry 197
+bufferboxname 198 BYTE WORD
+textcolor 199 BYTE
+cmdc8 200
+cmdc9 201
+signmsg 202
+normalmsg 203
+comparehiddenvar 204 BYTE WORD
+setobedience 205 WORD
+checkobedience 206 WORD
+executeram 207
+setworldmapflag 208 WORD
+warpteleport2 209 BYTE BYTE BYTE WORD WORD
+setcatchlocation 210 WORD BYTE
+braille2 211 POINTER
+bufferitems 212 BYTE WORD WORD
+cmdd5 213 DWORD
+cmdd6 214
+warp7 215 BYTE BYTE BYTE WORD WORD
+cmdd8 216
+cmdd9 217
+hidebox2 218
+preparemsg3 219 POINTER
+fadescreen3 220 BYTE
+buffertrainerclass 221 BYTE WORD
+buffertrainername 222 BYTE WORD
+pokenavcall 223 POINTER
+warp8 224 BYTE BYTE BYTE WORD WORD
+buffercontestype 225 BYTE WORD
+bufferitems2 226 BYTE WORD WORD
